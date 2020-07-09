@@ -273,7 +273,7 @@ a:active {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 16px;
+    margin: 16px 16px;
     width: auto;
 }
 
@@ -494,7 +494,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: auto;
 }
 
 .modal-body--cards-plan {
@@ -506,7 +506,7 @@ label {
     margin: 10px 10px;
     border-radius: 8px;
     width: 300px;
-    height: 450px;
+    height: auto;
     box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
 }
 
