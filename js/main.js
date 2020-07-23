@@ -35,22 +35,41 @@ for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
-let modal = document.getElementById('miModal');
-let flex = document.getElementById('flex');
-let abrir = document.getElementById('abrir');
-let cerrar = document.getElementById('close');
+let miModalweb = document.getElementById('miModalweb');
+let flexweb = document.getElementById('flexweb');
+let openweb = document.getElementById('openweb');
+let closeweb = document.getElementById('closeweb');
 
-abrir.addEventListener('click', function() {
-    modal.style.display = 'block';
+openweb.addEventListener('click', function() {
+    miModalweb.style.display = 'block';
 });
 
-cerrar.addEventListener('click', function() {
-    modal.style.display = 'none';
+closeweb.addEventListener('click', function() {
+    miModalweb.style.display = 'none';
 });
 
 window.addEventListener('click', function(e) {
     console.log(e.target);
-    if (e.target == flex) {
-        modal.style.display = 'none';
+    if (e.target == flexweb) {
+        miModalweb.style.display = 'none';
+    }
+});
+let miModalstore = document.getElementById('miModalstore');
+let flexstore = document.getElementById('flexstore');
+let openstore = document.getElementById('openstore');
+let closestore = document.getElementById('closestore');
+
+openstore.addEventListener('click', function() {
+    miModalstore.style.display = 'block';
+});
+
+closestore.addEventListener('click', function() {
+    miModalstore.style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+    console.log(e.target);
+    if (e.target == flexstore) {
+        miModalstore.style.display = 'none';
     }
 });
